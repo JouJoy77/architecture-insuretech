@@ -1,0 +1,412 @@
+
+2026-11-10T03:01:08.813118+03:00
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final get hpa,deploy,pods
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 16%/80%   1         10        1          86s
+
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/scaletestapp   1/1     1            1           87s
+
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/scaletestapp-86997cd857-f9m7l   1/1     Running   0          86s
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final top pods
+NAME                            CPU(cores)   MEMORY(bytes)   
+scaletestapp-86997cd857-f9m7l   5m           1Mi             
+
+$ curl -fsS http://192.168.67.2:30573/
+Идентификатор пода: scaletestapp-86997cd857-f9m7l
+
+$ curl -fsS http://192.168.67.2:30573/metrics
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 0
+go_gc_duration_seconds{quantile="0.25"} 0
+go_gc_duration_seconds{quantile="0.5"} 0
+go_gc_duration_seconds{quantile="0.75"} 0
+go_gc_duration_seconds{quantile="1"} 0
+go_gc_duration_seconds_sum 0
+go_gc_duration_seconds_count 0
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 6
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.22.12"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 252160
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 252160
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 7627
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 0
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 1.40032e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 252160
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 2.220032e+06
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 1.51552e+06
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 466
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 2.220032e+06
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 3.735552e+06
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 0
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 466
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 9600
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 15600
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 43840
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 48960
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 4.194304e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 975893
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 458752
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 458752
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 6.642704e+06
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 6
+# HELP http_requests_total No of request handled
+# TYPE http_requests_total counter
+http_requests_total 1
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 0.21
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1.048576e+06
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 8
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 7.43424e+06
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.79426878586e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 1.261268992e+09
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+process_virtual_memory_max_bytes 1.8446744073709552e+19
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+promhttp_metric_handler_requests_in_flight 1
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter
+promhttp_metric_handler_requests_total{code="200"} 0
+promhttp_metric_handler_requests_total{code="500"} 0
+promhttp_metric_handler_requests_total{code="503"} 0
+
+$ /tmp/insuretech-sprint8.vBbM5o/venv/bin/locust -f /home/vladimir/src/practicum/architecture-insuretech/Task2/locustfile.py --headless --only-summary --host http://192.168.67.2:30573 -u 550 -r 50 -t 150s
+
+2026-11-10T03:01:09.847166+03:00
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final get hpa,deploy,pods
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 16%/80%   1         10        1          86s
+
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/scaletestapp   1/1     1            1           88s
+
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/scaletestapp-86997cd857-f9m7l   1/1     Running   0          87s
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final top pods
+NAME                            CPU(cores)   MEMORY(bytes)   
+scaletestapp-86997cd857-f9m7l   5m           1Mi             
+
+2026-11-10T03:01:25.206307+03:00
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final get hpa,deploy,pods
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 16%/80%   1         10        1          102s
+
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/scaletestapp   1/1     1            1           103s
+
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/scaletestapp-86997cd857-f9m7l   1/1     Running   0          102s
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final top pods
+NAME                            CPU(cores)   MEMORY(bytes)   
+scaletestapp-86997cd857-f9m7l   19m          14Mi            
+
+2026-11-10T03:01:40.626818+03:00
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final get hpa,deploy,pods
+NAME                                               REFERENCE                 TARGETS            MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 140%/80%   1         10        1          117s
+
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/scaletestapp   2/2     2            2           118s
+
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/scaletestapp-86997cd857-f9m7l   1/1     Running   0          117s
+pod/scaletestapp-86997cd857-sqjzd   1/1     Running   0          12s
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final top pods
+NAME                            CPU(cores)   MEMORY(bytes)   
+scaletestapp-86997cd857-f9m7l   19m          14Mi            
+
+2026-11-10T03:01:56.215442+03:00
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final get hpa,deploy,pods
+NAME                                               REFERENCE                 TARGETS            MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 140%/80%   1         10        2          2m13s
+
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/scaletestapp   2/2     2            2           2m14s
+
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/scaletestapp-86997cd857-f9m7l   1/1     Running   0          2m13s
+pod/scaletestapp-86997cd857-sqjzd   1/1     Running   0          28s
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final top pods
+NAME                            CPU(cores)   MEMORY(bytes)   
+scaletestapp-86997cd857-f9m7l   19m          14Mi            
+
+2026-11-10T03:02:11.652796+03:00
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final get hpa,deploy,pods
+NAME                                               REFERENCE                 TARGETS            MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 140%/80%   1         10        2          2m28s
+
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/scaletestapp   2/2     2            2           2m29s
+
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/scaletestapp-86997cd857-f9m7l   1/1     Running   0          2m28s
+pod/scaletestapp-86997cd857-sqjzd   1/1     Running   0          43s
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final top pods
+NAME                            CPU(cores)   MEMORY(bytes)   
+scaletestapp-86997cd857-f9m7l   19m          14Mi            
+
+2026-11-10T03:02:27.076845+03:00
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final get hpa,deploy,pods
+NAME                                               REFERENCE                 TARGETS            MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 140%/80%   1         10        2          2m44s
+
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/scaletestapp   2/2     2            2           2m45s
+
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/scaletestapp-86997cd857-f9m7l   1/1     Running   0          2m44s
+pod/scaletestapp-86997cd857-sqjzd   1/1     Running   0          59s
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final top pods
+NAME                            CPU(cores)   MEMORY(bytes)   
+scaletestapp-86997cd857-f9m7l   190m         21Mi            
+scaletestapp-86997cd857-sqjzd   3m           1Mi             
+
+2026-11-10T03:02:42.635344+03:00
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final get hpa,deploy,pods
+NAME                                               REFERENCE                 TARGETS            MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 114%/80%   1         10        2          2m59s
+
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/scaletestapp   3/3     3            3           3m
+
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/scaletestapp-86997cd857-dswlb   1/1     Running   0          13s
+pod/scaletestapp-86997cd857-f9m7l   1/1     Running   0          2m59s
+pod/scaletestapp-86997cd857-sqjzd   1/1     Running   0          74s
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final top pods
+NAME                            CPU(cores)   MEMORY(bytes)   
+scaletestapp-86997cd857-f9m7l   190m         21Mi            
+scaletestapp-86997cd857-sqjzd   3m           1Mi             
+
+2026-11-10T03:02:58.207413+03:00
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final get hpa,deploy,pods
+NAME                                               REFERENCE                 TARGETS            MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 114%/80%   1         10        3          3m15s
+
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/scaletestapp   3/3     3            3           3m16s
+
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/scaletestapp-86997cd857-dswlb   1/1     Running   0          29s
+pod/scaletestapp-86997cd857-f9m7l   1/1     Running   0          3m15s
+pod/scaletestapp-86997cd857-sqjzd   1/1     Running   0          90s
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final top pods
+NAME                            CPU(cores)   MEMORY(bytes)   
+scaletestapp-86997cd857-f9m7l   190m         21Mi            
+scaletestapp-86997cd857-sqjzd   3m           1Mi             
+
+2026-11-10T03:03:14.129075+03:00
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final get hpa,deploy,pods
+NAME                                               REFERENCE                 TARGETS            MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 114%/80%   1         10        3          3m31s
+
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/scaletestapp   3/3     3            3           3m32s
+
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/scaletestapp-86997cd857-dswlb   1/1     Running   0          45s
+pod/scaletestapp-86997cd857-f9m7l   1/1     Running   0          3m31s
+pod/scaletestapp-86997cd857-sqjzd   1/1     Running   0          106s
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final top pods
+NAME                            CPU(cores)   MEMORY(bytes)   
+scaletestapp-86997cd857-f9m7l   190m         21Mi            
+scaletestapp-86997cd857-sqjzd   3m           1Mi             
+
+2026-11-10T03:03:29.586571+03:00
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final get hpa,deploy,pods
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 85%/80%   1         10        3          3m46s
+
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/scaletestapp   3/3     3            3           3m47s
+
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/scaletestapp-86997cd857-dswlb   1/1     Running   0          60s
+pod/scaletestapp-86997cd857-f9m7l   1/1     Running   0          3m46s
+pod/scaletestapp-86997cd857-sqjzd   1/1     Running   0          2m1s
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final top pods
+NAME                            CPU(cores)   MEMORY(bytes)   
+scaletestapp-86997cd857-dswlb   2m           1Mi             
+scaletestapp-86997cd857-f9m7l   197m         22Mi            
+scaletestapp-86997cd857-sqjzd   1m           1Mi             
+
+LOCUST EXIT CODE 0
+[2026-11-10 03:01:10,505] vladimir-virtualbox/INFO/locust.main: Starting Locust 2.47.0
+[2026-11-10 03:01:10,505] vladimir-virtualbox/INFO/locust.main: Run time limit set to 150 seconds
+[2026-11-10 03:01:10,507] vladimir-virtualbox/INFO/locust.runners: Ramping to 550 users at a rate of 50.00 per second
+[2026-11-10 03:01:20,538] vladimir-virtualbox/INFO/locust.runners: All users spawned: {"WebsiteUser": 550} (550 total users)
+[2026-11-10 03:03:40,151] vladimir-virtualbox/INFO/locust.main: --run-time limit reached, shutting down
+[2026-11-10 03:03:40,488] vladimir-virtualbox/INFO/locust.main: Shutting down (exit code 0)
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+GET      /                                                                              26748     0(0.00%) |     13       0     556      7 |  178.36        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                     26748     0(0.00%) |     13       0     556      7 |  178.36        0.00
+
+Response time percentiles (approximated)
+Type     Name                                                                                  50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+GET      /                                                                                       7     11     14     16     27     51     86    110    260    470    560  26748
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+         Aggregated                                                                              7     11     14     16     27     51     86    110    260    470    560  26748
+
+
+2026-11-10T03:03:45.232445+03:00
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final get hpa,deploy,pods
+NAME                                               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/scaletestapp   Deployment/scaletestapp   memory: 85%/80%   1         10        3          4m2s
+
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/scaletestapp   3/3     3            3           4m3s
+
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/scaletestapp-86997cd857-dswlb   1/1     Running   0          76s
+pod/scaletestapp-86997cd857-f9m7l   1/1     Running   0          4m2s
+pod/scaletestapp-86997cd857-sqjzd   1/1     Running   0          2m17s
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final top pods
+NAME                            CPU(cores)   MEMORY(bytes)   
+scaletestapp-86997cd857-dswlb   2m           1Mi             
+scaletestapp-86997cd857-f9m7l   197m         22Mi            
+scaletestapp-86997cd857-sqjzd   1m           1Mi             
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final describe hpa scaletestapp
+Name:                                                     scaletestapp
+Namespace:                                                scaletest-final
+Labels:                                                   <none>
+Annotations:                                              <none>
+CreationTimestamp:                                        Tue, 10 Nov 2026 02:59:43 +0300
+Reference:                                                Deployment/scaletestapp
+Metrics:                                                  ( current / target )
+  resource memory on pods  (as a percentage of request):  85% (8923818666m) / 80%
+Min replicas:                                             1
+Max replicas:                                             10
+Deployment pods:                                          3 current / 3 desired
+Conditions:
+  Type            Status  Reason              Message
+  ----            ------  ------              -------
+  AbleToScale     True    ReadyForNewScale    recommended size matches current size
+  ScalingActive   True    ValidMetricFound    the HPA was able to successfully calculate a replica count from memory resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange  the desired count is within the acceptable range
+Events:
+  Type     Reason                        Age                    From                       Message
+  ----     ------                        ----                   ----                       -------
+  Warning  FailedGetResourceMetric       3m33s (x2 over 3m48s)  horizontal-pod-autoscaler  failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+  Warning  FailedComputeMetricsReplicas  3m33s (x2 over 3m48s)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get memory resource metric value: failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+  Normal   SuccessfulRescale             2m18s                  horizontal-pod-autoscaler  New size: 2; reason: memory resource utilization (percentage of request) above target
+  Normal   SuccessfulRescale             77s                    horizontal-pod-autoscaler  New size: 3; reason: memory resource utilization (percentage of request) above target
+
+$ kubectl --context insuretech-sprint8 -n scaletest-final get events --sort-by=.metadata.creationTimestamp
+LAST SEEN   TYPE      REASON                         OBJECT                                 MESSAGE
+4m3s        Normal    Scheduled                      pod/scaletestapp-86997cd857-f9m7l      Successfully assigned scaletest-final/scaletestapp-86997cd857-f9m7l to insuretech-sprint8
+4m3s        Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled up replica set scaletestapp-86997cd857 from 0 to 1
+4m3s        Normal    SuccessfulCreate               replicaset/scaletestapp-86997cd857     Created pod: scaletestapp-86997cd857-f9m7l
+4m1s        Normal    Pulled                         pod/scaletestapp-86997cd857-f9m7l      Container image "ghcr.io/yandex-practicum/scaletestapp@sha256:eff20ae3ae2d596375f9ed6d612a78d149a35a66cd2907ea90d7175ca918c993" already present on machine and can be accessed by the pod
+4m          Normal    Created                        pod/scaletestapp-86997cd857-f9m7l      Container created
+3m59s       Normal    Started                        pod/scaletestapp-86997cd857-f9m7l      Container started
+3m33s       Warning   FailedGetResourceMetric        horizontalpodautoscaler/scaletestapp   failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+3m33s       Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/scaletestapp   invalid metrics (1 invalid out of 1), first error is: failed to get memory resource metric value: failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+2m18s       Normal    Scheduled                      pod/scaletestapp-86997cd857-sqjzd      Successfully assigned scaletest-final/scaletestapp-86997cd857-sqjzd to insuretech-sprint8
+2m18s       Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled up replica set scaletestapp-86997cd857 from 1 to 2
+2m18s       Normal    SuccessfulCreate               replicaset/scaletestapp-86997cd857     Created pod: scaletestapp-86997cd857-sqjzd
+2m18s       Normal    SuccessfulRescale              horizontalpodautoscaler/scaletestapp   New size: 2; reason: memory resource utilization (percentage of request) above target
+2m16s       Normal    Pulled                         pod/scaletestapp-86997cd857-sqjzd      Container image "ghcr.io/yandex-practicum/scaletestapp@sha256:eff20ae3ae2d596375f9ed6d612a78d149a35a66cd2907ea90d7175ca918c993" already present on machine and can be accessed by the pod
+2m15s       Normal    Created                        pod/scaletestapp-86997cd857-sqjzd      Container created
+2m14s       Normal    Started                        pod/scaletestapp-86997cd857-sqjzd      Container started
+77s         Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled up replica set scaletestapp-86997cd857 from 2 to 3
+77s         Normal    SuccessfulCreate               replicaset/scaletestapp-86997cd857     Created pod: scaletestapp-86997cd857-dswlb
+77s         Normal    SuccessfulRescale              horizontalpodautoscaler/scaletestapp   New size: 3; reason: memory resource utilization (percentage of request) above target
+77s         Normal    Scheduled                      pod/scaletestapp-86997cd857-dswlb      Successfully assigned scaletest-final/scaletestapp-86997cd857-dswlb to insuretech-sprint8
+75s         Normal    Pulled                         pod/scaletestapp-86997cd857-dswlb      Container image "ghcr.io/yandex-practicum/scaletestapp@sha256:eff20ae3ae2d596375f9ed6d612a78d149a35a66cd2907ea90d7175ca918c993" already present on machine and can be accessed by the pod
+74s         Normal    Started                        pod/scaletestapp-86997cd857-dswlb      Container started
+74s         Normal    Created                        pod/scaletestapp-86997cd857-dswlb      Container created

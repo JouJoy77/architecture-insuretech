@@ -1,0 +1,642 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" compressed="false">
+  <diagram id="c4-osago" name="Контейнеры C4">
+    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1280" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kicker" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;INSURETECH    /    СПРИНТ 08    /    TASK 4  /  01&lt;/div&gt;">
+          <mxGeometry x="48" y="22" width="780" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:35px;color:#14283E;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;InsureTech · продажа ОСАГО&lt;/div&gt;">
+          <mxGeometry x="48" y="50" width="1550" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:17px;color:#425873;line-height:1.24;margin-top:0px;&quot;&gt;Подбор ОСАГО асинхронно. Тарифы и полисы распространяются по потокам из Task3.&lt;/div&gt;">
+          <mxGeometry x="49" y="104" width="1820" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="badge" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=17;fillColor=#E8F1FC;strokeColor=none;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;C4  /  КОНТЕЙНЕРЫ&lt;/div&gt;">
+          <mxGeometry x="1639" y="46" width="229" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F8FBFF;strokeColor=#8DA5BF;strokeWidth=1.4;dashed=1;dashPattern=7 5;pointerEvents=0;connectable=0;">
+          <mxGeometry x="350" y="313" width="1236" height="883" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:17px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;InsureTech  [Программная система]&lt;/div&gt;">
+          <mxGeometry x="374" y="1157" width="1148" height="30" as="geometry" />
+        </mxCell>
+        <object id="person" placeholders="1" c4Name="Клиент" c4Type="Человек" c4Technology="" c4Description="" label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type%]&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#083F75;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=1;fontFamily=Arial;">
+            <mxGeometry x="449" y="149" width="218" height="116" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="payments" placeholders="1" c4Name="Платёжный сервис" c4Type="Внешняя система" c4Technology="" c4Description="Принимает оплату страховок" label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#59576E;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#59576E;metaEdit=1;resizable=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontFamily=Arial;">
+            <mxGeometry x="48" y="347" width="260" height="110" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="partners" placeholders="1" c4Name="Системы партнёров" c4Type="Внешняя система" c4Technology="" c4Description="Оформляют страховки по B2B API" label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#59576E;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#59576E;metaEdit=1;resizable=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontFamily=Arial;">
+            <mxGeometry x="48" y="557" width="260" height="128" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="insurers" placeholders="1" c4Name="Страховщики ×10" c4Type="Внешняя система" c4Technology="" c4Description="Пять текущих и пять новых. Каталог, оформление, взаиморасчёты." label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#59576E;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#59576E;metaEdit=1;resizable=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontFamily=Arial;">
+            <mxGeometry x="1642" y="645" width="229" height="136" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="web" placeholders="1" c4Name="InsureTech Web" c4Type="Контейнер" c4Technology="React" c4Description="Подбор и оформление страховок, предложения ОСАГО" label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type% · %c4Technology%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;strokeColor=#1B6D9B;fillColor=#1B6D9B;strokeColor=#1B6D9B;strokeColor2=#175579;fontSize=12;fontColor=#ffffff;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=1;fontFamily=Arial;">
+            <mxGeometry x="416" y="347" width="284" height="110" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="client" placeholders="1" c4Name="client-info" c4Type="Контейнер" c4Technology="Kotlin, Spring Boot" c4Description="Ведёт карточки клиентов и данные для оформления" label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type% · %c4Technology%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#1B6D9B;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#1B6D9B;metaEdit=1;resizable=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontFamily=Arial;">
+            <mxGeometry x="827" y="347" width="290" height="110" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="client-db" placeholders="1" c4Name="client-info-db" c4Type="Хранилище" c4Technology="схема PostgreSQL" c4Description="Персональные данные клиентов" label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type% · %c4Technology%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="shape=cylinder3;size=5.9999511718749545;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#246585;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#246585;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=1;fontFamily=Arial;">
+            <mxGeometry x="1258" y="347" width="283" height="110" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="core" placeholders="1" c4Name="core-app" c4Type="Контейнер" c4Technology="Kotlin, Spring Boot" c4Description="Ищет продукты, оформляет и показывает полисы. Ведёт заявки, выбор предложения и SSE ОСАГО." label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type% · %c4Technology%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#1B6D9B;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#1B6D9B;metaEdit=1;resizable=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontFamily=Arial;">
+            <mxGeometry x="416" y="557" width="284" height="128" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="products" placeholders="1" c4Name="ins-product-aggregator" c4Type="Контейнер" c4Technology="Kotlin, Spring Boot" c4Description="Независимо опрашивает API страховщиков и нормализует каталог" label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type% · %c4Technology%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#1B6D9B;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#1B6D9B;metaEdit=1;resizable=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontFamily=Arial;">
+            <mxGeometry x="1258" y="557" width="283" height="128" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="kafka" placeholders="1" c4Name="Потоки событий" c4Type="Контейнер" c4Technology="Apache Kafka" c4Description="insurance.catalog.v1&lt;br&gt;insurance.policies.v1&lt;br&gt;osago.quote.{requested,updated}.v1" label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type% · %c4Technology%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#5C4EA0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#5C4EA0;metaEdit=1;resizable=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontFamily=Arial;">
+            <mxGeometry x="827" y="580" width="290" height="137" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="connect" placeholders="1" c4Name="Ретранслятор outbox" c4Type="Контейнер" c4Technology="Kafka Connect / Debezium" c4Description="Публикует зафиксированные события из WAL" label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type% · %c4Technology%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#5C4EA0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#5C4EA0;metaEdit=1;resizable=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontFamily=Arial;">
+            <mxGeometry x="827" y="817" width="290" height="110" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="settlement" placeholders="1" c4Name="ins-comp-settlement" c4Type="Контейнер" c4Technology="Kotlin, Spring Boot" c4Description="Ведёт реестр и раз в месяц передаёт его страховщикам" label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type% · %c4Technology%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#1B6D9B;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#1B6D9B;metaEdit=1;resizable=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontFamily=Arial;">
+            <mxGeometry x="1258" y="817" width="283" height="110" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="db" placeholders="1" c4Name="Хранилище прикладных данных" c4Type="Хранилище" c4Technology="PostgreSQL HA · отдельные схемы" c4Description="core-db · полисы, локальный каталог, outbox&lt;br&gt;catalog-db · каталог, состояние опроса, outbox  　|　 ins-comp-settlement-db · полисы, тарифы, реестры&lt;br&gt;osago-db · очередь, внешние идентификаторы и outbox　 |　 core-db также хранит заявки и журнал SSE" label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type% · %c4Technology%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="shape=cylinder3;size=5.9999511718749545;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#246585;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#246585;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=1;fontFamily=Arial;">
+            <mxGeometry x="416" y="1019" width="1125" height="126" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="osago" placeholders="1" c4Name="osago-aggregator" c4Type="Контейнер" c4Technology="Kotlin, Spring Boot" c4Description="Создаёт заявки у страховщиков, опрашивает и публикует результаты" label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type% · %c4Technology%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#1B6D9B;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#1B6D9B;metaEdit=1;resizable=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontFamily=Arial;">
+            <mxGeometry x="416" y="817" width="284" height="110" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="osago-limits" placeholders="1" c4Name="Лимиты и breaker" c4Type="Контейнер" c4Technology="HA Redis" c4Description="" label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type% · %c4Technology%]&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#246585;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#246585;metaEdit=1;resizable=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontFamily=Arial;">
+            <mxGeometry x="416" y="717" width="284" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="osago-api" placeholders="1" c4Name="API ОСАГО" c4Type="Внешняя система" c4Technology="" c4Description="Те же страховщики ×10. Создание заявки и получение предложения." label="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#FFFFFF;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;%c4Name%&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#ECF3FF;line-height:1.24;margin-top:3px;&quot;&gt;[%c4Type%]&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#FFFFFF;line-height:1.24;margin-top:7px;&quot;&gt;%c4Description%&lt;/div&gt;">
+          <mxCell parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#59576E;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#59576E;metaEdit=1;resizable=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fontFamily=Arial;">
+            <mxGeometry x="48" y="817" width="260" height="110" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="person-web" parent="1" edge="1" source="person" target="web" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#425873;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="person-web-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#425873;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Использует сайт&lt;/div&gt;">
+          <mxGeometry x="570" y="277" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="web-client" parent="1" edge="1" source="web" target="client" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#425873;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.51;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.51;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="web-client-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#425873;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Личный кабинет&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#425873;line-height:1.24;margin-top:2px;&quot;&gt;REST&lt;/div&gt;">
+          <mxGeometry x="704" y="365" width="118" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="client-db-edge" parent="1" edge="1" source="client" target="client-db" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#425873;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.51;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.51;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="client-db-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#425873;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Данные клиента&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#425873;line-height:1.24;margin-top:2px;&quot;&gt;SQL / TLS&lt;/div&gt;">
+          <mxGeometry x="1121" y="365" width="131" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="web-core" parent="1" edge="1" source="web" target="core" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#425873;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=0.48;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.48;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="web-core-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#425873;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Поиск, полисы&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#425873;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Заявки ОСАГО&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#425873;line-height:1.24;margin-top:2px;&quot;&gt;REST / HTTPS&lt;/div&gt;">
+          <mxGeometry x="418" y="477" width="127" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="web-rate" parent="1" vertex="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=job;">
+          <mxGeometry x="566" y="495" width="27" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="sse" parent="1" edge="1" source="core" target="web" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#25725C;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=0.77;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.77;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sse-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#25725C;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Предложения&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#25725C;line-height:1.24;margin-top:2px;&quot;&gt;SSE / HTTPS&lt;/div&gt;">
+          <mxGeometry x="642" y="479" width="105" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="web-payment" parent="1" edge="1" source="web" target="payments" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#425873;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=0;exitY=0.29;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.29;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="web-pay-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#425873;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Редирект&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#425873;line-height:1.24;margin-top:2px;&quot;&gt;HTTPS&lt;/div&gt;">
+          <mxGeometry x="311" y="346" width="102" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="core-payment" parent="1" edge="1" source="core" target="payments" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#425873;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=0;exitY=0.19;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.73;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="376" y="581.32" />
+              <mxPoint x="376" y="427.3" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="core-pay-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#425873;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Оплата&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#425873;line-height:1.24;margin-top:2px;&quot;&gt;HTTPS&lt;/div&gt;">
+          <mxGeometry x="307" y="463" width="65" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="partner-core" parent="1" edge="1" source="partners" target="core" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#425873;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.67;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.67;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="partner-core-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#425873;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Оформление&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#425873;line-height:1.24;margin-top:2px;&quot;&gt;REST&lt;/div&gt;">
+          <mxGeometry x="308" y="599" width="105" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="core-client" parent="1" edge="1" source="core" target="client" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#425873;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.19;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.19;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="763" y="581.32" />
+              <mxPoint x="763" y="511" />
+              <mxPoint x="882.1" y="511" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="core-client-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#425873;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Читает и обновляет данные&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#425873;line-height:1.24;margin-top:2px;&quot;&gt;REST&lt;/div&gt;">
+          <mxGeometry x="895" y="474" width="198" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="products-insurers" parent="1" edge="1" source="products" target="insurers" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#425873;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.32;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.27;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1609" y="597.96" />
+              <mxPoint x="1609" y="681.72" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="products-insurers-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#425873;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Получает каталог и тарифы&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#425873;line-height:1.24;margin-top:2px;&quot;&gt;REST / SOAP / GraphQL&lt;/div&gt;">
+          <mxGeometry x="1619" y="561" width="247" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="settlement-insurers" parent="1" edge="1" source="settlement" target="insurers" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#425873;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.6;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.77;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1609" y="883" />
+              <mxPoint x="1609" y="749.72" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="settlement-insurers-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#425873;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Передаёт месячный реестр&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#425873;line-height:1.24;margin-top:2px;&quot;&gt;REST / SOAP / GraphQL&lt;/div&gt;">
+          <mxGeometry x="1633" y="818" width="239" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="kafka-core" parent="1" edge="1" source="kafka" target="core" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2.3;endArrow=blockThin;endSize=10;endFill=1;exitX=0;exitY=0.52;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.73;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kafka-core-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#5C4EA0;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Каталог + ОСАГО&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#5C4EA0;line-height:1.24;margin-top:2px;&quot;&gt;Kafka&lt;/div&gt;">
+          <mxGeometry x="701" y="607" width="124" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kafka-settlement" parent="1" edge="1" source="kafka" target="settlement" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2.3;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.59;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.46;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1164" y="660.83" />
+              <mxPoint x="1164" y="867.6" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kafka-settlement-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#5C4EA0;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Каталог&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:14px;color:#5C4EA0;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;и полисы&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#5C4EA0;line-height:1.24;margin-top:2px;&quot;&gt;Kafka&lt;/div&gt;">
+          <mxGeometry x="1169" y="754" width="76" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="core-db-edge" parent="1" edge="1" source="core" target="db" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#25725C;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=0.12;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.03;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450.08" y="701" />
+              <mxPoint x="365" y="701" />
+              <mxPoint x="365" y="977" />
+              <mxPoint x="449.75" y="977" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="core-db-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#25725C;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Полисы, заявки · SQL&lt;/div&gt;">
+          <mxGeometry x="382" y="940" width="174" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="products-db-edge" parent="1" edge="1" source="products" target="db" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#25725C;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=0.05;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.77;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1272.15" y="715" />
+              <mxPoint x="1243" y="715" />
+              <mxPoint x="1243" y="964" />
+              <mxPoint x="1282.25" y="964" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="products-db-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=right;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#25725C;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Каталог&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#25725C;line-height:1.24;margin-top:2px;&quot;&gt;SQL / TLS&lt;/div&gt;">
+          <mxGeometry x="1126" y="900" width="98" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="settlement-db-edge" parent="1" edge="1" source="settlement" target="db" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#25725C;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=0.64;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.9095;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="settlement-db-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#25725C;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Реестры&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#25725C;line-height:1.24;margin-top:2px;&quot;&gt;SQL / TLS&lt;/div&gt;">
+          <mxGeometry x="1448" y="949" width="109" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="db-connect" parent="1" edge="1" source="db" target="connect" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2.3;endArrow=blockThin;endSize=10;endFill=1;exitX=0.4942;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="db-connect-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#5C4EA0;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Зафиксированные outbox&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#5C4EA0;line-height:1.24;margin-top:2px;&quot;&gt;CDC / WAL&lt;/div&gt;">
+          <mxGeometry x="988" y="944" width="216" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="connect-kafka" parent="1" edge="1" source="connect" target="kafka" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2.3;endArrow=blockThin;endSize=10;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="connect-kafka-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#5C4EA0;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Публикует события&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#5C4EA0;line-height:1.24;margin-top:2px;&quot;&gt;Kafka&lt;/div&gt;">
+          <mxGeometry x="988" y="744" width="157" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="kafka-osago" parent="1" edge="1" source="kafka" target="osago" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2.3;endArrow=blockThin;endSize=10;endFill=1;exitX=0;exitY=0.88;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.46;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="770" y="700.56" />
+              <mxPoint x="770" y="867.6" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kafka-osago-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#5C4EA0;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Задание ОСАГО&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#5C4EA0;line-height:1.24;margin-top:2px;&quot;&gt;Kafka&lt;/div&gt;">
+          <mxGeometry x="779" y="744" width="137" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="osago-db-edge" parent="1" edge="1" source="osago" target="db" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#25725C;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=0.77;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.1944;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="osago-db-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#25725C;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Очередь и outbox&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#25725C;line-height:1.24;margin-top:2px;&quot;&gt;SQL / TLS&lt;/div&gt;">
+          <mxGeometry x="648" y="948" width="152" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="osago-redis" parent="1" edge="1" source="osago" target="osago-limits" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#25725C;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="osago-redis-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#25725C;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Квоты · RESP/TLS&lt;/div&gt;">
+          <mxGeometry x="569" y="789" width="123" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="osago-insurer-edge" parent="1" edge="1" source="osago" target="osago-api" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#425873;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="osago-insurer-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;strokeColor=none;fillColor=#FFFFFF;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#425873;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;POST / GET&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:13px;color:#425873;line-height:1.24;margin-top:2px;&quot;&gt;REST / TLS&lt;/div&gt;">
+          <mxGeometry x="309" y="822" width="99" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="c4-osago-pattern0" parent="1" vertex="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=job;">
+          <mxGeometry x="51" y="952" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c4-osago-pattern1" parent="1" vertex="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=c_role;">
+          <mxGeometry x="90" y="952" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c4-osago-pattern2" parent="1" vertex="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=deploy;">
+          <mxGeometry x="129" y="952" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c4-osago-pattern3" parent="1" vertex="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=quota;">
+          <mxGeometry x="168" y="952" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="patterns-label" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Вызовы защищены паттернами&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:12px;color:#425873;line-height:1.24;margin-top:3px;&quot;&gt;Настройки на вкладке &quot;Нагрузка и сбои&quot;&lt;/div&gt;">
+          <mxGeometry x="51" y="988" width="258" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#425873;line-height:1.24;margin-top:0px;&quot;&gt;Синий - контейнер InsureTech  ·  серый - внешняя система  ·  фиолетовый - событийный поток  ·  зелёный - данные и SSE  ·  TLS и входные шлюзы показаны в Task1&lt;/div&gt;">
+          <mxGeometry x="49" y="1211" width="1821" height="35" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="osago-flow" name="Поток подбора ОСАГО">
+    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1240" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kicker" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;INSURETECH    /    СПРИНТ 08    /    TASK 4  /  02&lt;/div&gt;">
+          <mxGeometry x="48" y="22" width="780" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:35px;color:#14283E;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;От заявки до частичных предложений&lt;/div&gt;">
+          <mxGeometry x="48" y="50" width="1430" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:17px;color:#425873;line-height:1.24;margin-top:0px;&quot;&gt;Страховщиков ждём не более 60 секунд. Каждый полученный вовремя ответ доставляется в браузер отдельным событием.&lt;/div&gt;">
+          <mxGeometry x="49" y="104" width="1700" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="badge" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=17;fillColor=#E8F1FC;strokeColor=none;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;REST  /  KAFKA  /  SSE&lt;/div&gt;">
+          <mxGeometry x="1519" y="46" width="229" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="paths" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#EFF5FF;strokeColor=#EFF5FF;strokeWidth=1.4;">
+          <mxGeometry x="48" y="151" width="1702" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="paths-title" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:16px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;КОНТРАКТЫ И ПОСЛЕДОВАТЕЛЬНОСТЬ&lt;/div&gt;">
+          <mxGeometry x="61" y="151" width="1677" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="os-step01" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="48" y="201" width="397" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="os-step01-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;01   Приём заявки · core-app&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;POST /osago/requests + Idempotency-Key в области userId. Заявка и outbox - одна транзакция. 202 {requestId, deadlineAt}. Повтор того же тела возвращает заявку; другое тело с тем же ключом → 409.&lt;/div&gt;">
+          <mxGeometry x="66" y="214" width="361" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="os-step02" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="483" y="201" width="397" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="os-step02-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;02   Задание · Kafka&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Асинхронный API: osago.quote.requested.v1 → группа osago-aggregator. requestId, eventId, deadlineAt, insurerIds и данные расчёта. Inbox + задания атомарно, затем offset. HTTP RPC не нужен.&lt;/div&gt;">
+          <mxGeometry x="501" y="214" width="361" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="os-step03" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="918" y="201" width="397" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="os-step03-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;03   Подбор · osago-aggregator&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Сохраняет отдельное задание на страховщика. Воркеры независимо вызывают POST заявки и GET решения. Каждый результат фиксируется сразу вместе с outbox.&lt;/div&gt;">
+          <mxGeometry x="936" y="214" width="361" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="os-step04" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="1353" y="201" width="397" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="os-step04-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;04   Результат · Kafka&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;osago.quote.updated.v1 → группа core-app. Ключ requestId. Поля eventId, insurerId, revision, status, offer и receivedAt. Core записывает результат и запись для SSE одной транзакцией.&lt;/div&gt;">
+          <mxGeometry x="1371" y="214" width="361" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="os-flow1" parent="1" edge="1" source="os-step01" target="os-step02" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="os-flow2" parent="1" edge="1" source="os-step02" target="os-step03" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="os-flow3" parent="1" edge="1" source="os-step03" target="os-step04" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="os-flow4" parent="1" edge="1" source="os-step04" target="sse-contract" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#25725C;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1551.5" y="409" />
+              <mxPoint x="469" y="409" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sse-contract" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="48" y="426" width="842" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="sse-contract-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;05   Доставка в браузер · SSE&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;GET /osago/requests/{id}/events → text/event-stream. Только владелец заявки. offer-updated несёт seq, insurerId, статус и условия; браузер сразу обновляет карточку. completed закрывает EventSource.&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;На 60-й секунде интерфейс прекращает ожидание страховщиков, но сохраняет SSE для доставки уже полученных ответов. Пока нет итогов, показывает &amp;quot;Получаем результаты&amp;quot;, а не отказ. При обрыве доступны снимок и replay; транспортный сбой отображается отдельно.&lt;/div&gt;">
+          <mxGeometry x="66" y="439" width="806" height="189" as="geometry" />
+        </mxCell>
+        <mxCell id="sse-reconnect" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="910" y="426" width="840" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="sse-reconnect-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#25725C;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Восстановление соединения и снимок состояния&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;GET /osago/requests/{id} → текущие предложения, статус, deadlineAt и последний seq. При переподключении Last-Event-ID позволяет дочитать журнал с любого pod. При новой подписке можно передать ?after=seq, полученный из снимка. Просроченный курсор заменяется снимком.&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;L7 и ingress передают SSE без буферизации. Heartbeat 10 с, таймаут маршрута 90 с, idle timeout 30 с.&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Выбор действующего предложения и выпуск полиса выполняются через REST core-app.&lt;/div&gt;">
+          <mxGeometry x="928" y="439" width="804" height="189" as="geometry" />
+        </mxCell>
+        <mxCell id="state-band" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#EFF5FF;strokeColor=#EFF5FF;strokeWidth=1.4;">
+          <mxGeometry x="48" y="670" width="1702" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="state-band-title" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:16px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;СОСТОЯНИЕ МЕЖДУ РЕПЛИКАМИ И ГРАНИЦЫ ДЕДЛАЙНА&lt;/div&gt;">
+          <mxGeometry x="61" y="670" width="1677" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="shared-work" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="48" y="719" width="551" height="337" as="geometry" />
+        </mxCell>
+        <mxCell id="shared-work-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;osago-db · задания и финализация&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Строка (requestId, insurerId) хранит lease, generation, внешний ID, deadlineAt, nextPollAt, receivedAt и результат. Воркеры берут задания через SKIP LOCKED; HTTP выполняется вне транзакции.&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Результат и outbox фиксируются под блокировкой строки. Финализатор ждёт отмены/завершения текущего вызова, затем ставит TIMED_OUT только при отсутствии своевременного ответа. Старое поколение не пишет результат; сбой воркера обрабатывается после истечения lease.&lt;/div&gt;">
+          <mxGeometry x="66" y="732" width="515" height="311" as="geometry" />
+        </mxCell>
+        <mxCell id="shared-sse" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="624" y="719" width="551" height="337" as="geometry" />
+        </mxCell>
+        <mxCell id="shared-sse-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;core-db · проекция и журнал SSE&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Core проверяет eventId и revision по (requestId, insurerId), под FOR UPDATE пишет inbox, результат и seq+1 в журнал. completed появляется только после финальных событий всех страховщиков. Таймер core не превращает задержку Kafka в отказ страховщика.&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;NOTIFY в той же транзакции доставляется после commit. Один LISTEN-сеанс на pod и опрос раз в 1 с; replay доступен с любой реплики. После completed новые ревизии не меняют итог.&lt;/div&gt;">
+          <mxGeometry x="642" y="732" width="515" height="311" as="geometry" />
+        </mxCell>
+        <mxCell id="deadline" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="1200" y="719" width="550" height="337" as="geometry" />
+        </mxCell>
+        <mxCell id="deadline-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Дедлайн ответа и доставка результата&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;deadlineAt = t₀ + 60 с. Агрегатор принимает ответы до deadlineAt включительно; отсечки на 58-й секунде нет. receivedAt фиксирует момент получения HTTP-ответа. Вызов ограничен оставшимся временем.&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;После дедлайна новые опросы запрещены, незавершённые вызовы отменяются. Агрегатор завершает задания после обработки уже полученных ответов и публикует итог по каждому страховщику. Core не отклоняет ответ с receivedAt ≤ deadlineAt из-за задержки Kafka.&lt;/div&gt;">
+          <mxGeometry x="1218" y="732" width="514" height="311" as="geometry" />
+        </mxCell>
+        <mxCell id="security" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="48" y="1080" width="1702" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="security-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Защита данных&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;SSE использует cookie сессии через EventSource withCredentials. CORS разрешает origin веб-приложения, POST защищён от CSRF. Kafka использует TLS и ACL по топикам. В событиях только данные для расчёта, срок хранения технических данных ограничен.&lt;/div&gt;">
+          <mxGeometry x="66" y="1093" width="1666" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="references" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;span style=&quot;font-family:Arial;font-size:13px&quot;&gt;&lt;a href=&quot;https://html.spec.whatwg.org/multipage/server-sent-events.html&quot; style=&quot;color:#205F99&quot;&gt;HTML Living Standard · Server-Sent Events&lt;/a&gt;　·　&lt;a href=&quot;https://yandex.cloud/ru/docs/application-load-balancer/concepts/http-router&quot; style=&quot;color:#205F99&quot;&gt;Yandex ALB · таймауты HTTP-роутера&lt;/a&gt;&lt;/span&gt;">
+          <mxGeometry x="49" y="1184" width="1702" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="osago-resilience" name="Нагрузка и сбои">
+    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1125" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kicker" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;INSURETECH    /    СПРИНТ 08    /    TASK 4  /  03&lt;/div&gt;">
+          <mxGeometry x="48" y="22" width="780" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:35px;color:#14283E;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Внешние вызовы и защита от перегрузки&lt;/div&gt;">
+          <mxGeometry x="48" y="50" width="1430" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:17px;color:#425873;line-height:1.24;margin-top:0px;&quot;&gt;У каждого страховщика своя очередь, лимит запросов и состояние Circuit Breaker.&lt;/div&gt;">
+          <mxGeometry x="49" y="104" width="1700" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="badge" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=17;fillColor=#E8F1FC;strokeColor=none;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;2 500 ПОЛЬЗОВАТЕЛЕЙ&lt;/div&gt;">
+          <mxGeometry x="1519" y="46" width="229" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="pattern-band" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#EFF5FF;strokeColor=#EFF5FF;strokeWidth=1.4;">
+          <mxGeometry x="48" y="151" width="1702" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="pattern-band-title" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:16px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;ПАТТЕРНЫ НА ГРАНИЦАХ  /  ОБОЗНАЧЕНИЯ ИЗ БИБЛИОТЕКИ TASK4&lt;/div&gt;">
+          <mxGeometry x="61" y="151" width="1677" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="resilience0" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="48" y="204" width="840" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="resilience-icon0" parent="1" vertex="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=job;">
+          <mxGeometry x="63" y="222" width="39" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="resilience-label0" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Rate Limiting&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Шлюз ограничивает POST на клиента (429). Общий лимитер по insurerId учитывает все pod и POST/GET/повторы; отдельный предел параллелизма. При недоступном Redis внешние вызовы приостановлены до восстановления или дедлайна.&lt;/div&gt;">
+          <mxGeometry x="119" y="217" width="746" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="resilience1" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="910" y="204" width="840" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="resilience-icon1" parent="1" vertex="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=c_role;">
+          <mxGeometry x="925" y="222" width="39" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="resilience-label1" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Circuit Breaker&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;На вызовах POST/GET к каждому страховщику независимо. Состояние общее в HA Redis. В half-open один пробный вызов. Открытая цепь освобождает воркеры и даёт UNAVAILABLE, если повтор до дедлайна уже невозможен.&lt;/div&gt;">
+          <mxGeometry x="981" y="217" width="746" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="resilience2" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="48" y="372" width="840" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="resilience-icon2" parent="1" vertex="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=deploy;">
+          <mxGeometry x="63" y="390" width="39" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="resilience-label2" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Retry&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;GET при временных ошибках повторяется с backoff и jitter. Для 429 учитывается Retry-After. POST повторяется только со стабильным ключом идемпотентности, когда его поддерживает страховщик. Каждый повтор входит в общий бюджет.&lt;/div&gt;">
+          <mxGeometry x="119" y="385" width="746" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="resilience3" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="910" y="372" width="840" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="resilience-icon3" parent="1" vertex="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=quota;">
+          <mxGeometry x="925" y="390" width="39" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="resilience-label3" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Timeout&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;HTTP-вызов: min(2 с, оставшееся время до deadlineAt), подключение до 500 мс. Последний GET можно начать до дедлайна с сокращённым timeout. Между опросами backoff + jitter. Дедлайн страховщика не применяется к доставке сохранённого результата.&lt;/div&gt;">
+          <mxGeometry x="981" y="385" width="746" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="load-band" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#EFF5FF;strokeColor=#EFF5FF;strokeWidth=1.4;">
+          <mxGeometry x="48" y="547" width="1702" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="load-band-title" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:16px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;ЁМКОСТЬ, РАСПРЕДЕЛЕНИЕ РАБОТЫ И ВОССТАНОВЛЕНИЕ&lt;/div&gt;">
+          <mxGeometry x="61" y="547" width="1677" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="sizing" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="48" y="599" width="551" height="301" as="geometry" />
+        </mxCell>
+        <mxCell id="sizing-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Пик и нижняя оценка пропускной способности&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;При 2 500 заявках и 10 API появляется до 25 000 заданий. При одновременном старте за 60 с каждый страховщик должен принять в среднем ≥42 POST/с ещё до GET.&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;До 9 HTTP-попыток на пару заявка/страховщик, включая максимум 8 GET. Верхняя оценка - 225 000 вызовов на волну, или 3 750/с в среднем за 60 с. Если квота не позволяет выполнить задания вовремя, core показывает частичные результаты.&lt;/div&gt;">
+          <mxGeometry x="66" y="612" width="515" height="275" as="geometry" />
+        </mxCell>
+        <mxCell id="scaling" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="624" y="599" width="551" height="301" as="geometry" />
+        </mxCell>
+        <mxCell id="scaling-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Масштабирование и изоляция&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Тестировать ≥2 500 активных SSE и реконнекты. Цель доставки от ответа страховщика до браузера p95 ≤2 с. Держать запас готовых core-app перед рекламой. Масштабировать по SSE-соединениям, возрасту задания и Kafka lag.&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Настроить отдельные очереди и лимиты параллелизма по insurerId. При перегрузке одного API остальные продолжают отдавать результаты.&lt;/div&gt;">
+          <mxGeometry x="642" y="612" width="515" height="275" as="geometry" />
+        </mxCell>
+        <mxCell id="duplicate" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="1200" y="599" width="550" height="301" as="geometry" />
+        </mxCell>
+        <mxCell id="duplicate-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Неоднозначный ответ на создание&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Партнёру с идемпотентным API передаётся постоянный ключ requestId + insurerId. Для прочих агрегатор фиксирует право на единственный POST до вызова и отключает его автоматический повтор.&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Если исход POST неизвестен и внешний ID не получен, сохраняется UNKNOWN для сверки. При наличии внешнего ID другая реплика продолжает GET с сохранённым состоянием.&lt;/div&gt;">
+          <mxGeometry x="1218" y="612" width="514" height="275" as="geometry" />
+        </mxCell>
+        <mxCell id="observability" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="48" y="924" width="1702" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="observability-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Проверка границ времени&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Тесты: ответ на 59,9 с проходит; ответ после 60 с не принимается; ответ на 59,9 с с доставкой Kafka на 62 с отображается. Дубликаты, обрыв SSE и переход на другой pod не теряют предложения. Контролировать отдельно время ответа страховщика и lag доставки; цель доставки p95 ≤2 с.&lt;/div&gt;">
+          <mxGeometry x="66" y="937" width="1666" height="99" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="event-contracts" name="Каталог и полисы">
+    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1110" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kicker" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;INSURETECH    /    СПРИНТ 08    /    СОБЫТИЙНЫЕ ПОТОКИ&lt;/div&gt;">
+          <mxGeometry x="48" y="22" width="780" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:35px;color:#14283E;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;От изменения до локальной проекции&lt;/div&gt;">
+          <mxGeometry x="48" y="50" width="1430" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:17px;color:#425873;line-height:1.24;margin-top:0px;&quot;&gt;Kafka разделяет обработку внешних ответов, публикацию и работу потребителей.&lt;/div&gt;">
+          <mxGeometry x="49" y="104" width="1700" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="badge" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=17;fillColor=#E8F1FC;strokeColor=none;" value="&lt;div style=&quot;font-family:Arial;font-size:14px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;КОНТРАКТЫ  /  ДОСТАВКА&lt;/div&gt;">
+          <mxGeometry x="1519" y="46" width="229" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="catalog-band" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#EFF5FF;strokeColor=#EFF5FF;strokeWidth=1.4;">
+          <mxGeometry x="48" y="151" width="1702" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="catalog-band-title" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:16px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;КАТАЛОГ  /  INSURANCE.CATALOG.V1&lt;/div&gt;">
+          <mxGeometry x="61" y="151" width="1677" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="policies-band" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#EFF5FF;strokeColor=#EFF5FF;strokeWidth=1.4;">
+          <mxGeometry x="48" y="366" width="1702" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="policies-band-title" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:16px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;ОФОРМЛЕННЫЕ ПОЛИСЫ  /  INSURANCE.POLICIES.V1&lt;/div&gt;">
+          <mxGeometry x="61" y="366" width="1677" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="step0-0" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="48" y="202" width="397" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="step0-0-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;API 5 → 10 страховщиков&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Опрос каждые 5 мин со сдвигом. Таймаут и квота на страховщика. Сбой сохраняет последний валидный снимок.&lt;/div&gt;">
+          <mxGeometry x="66" y="215" width="361" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="step0-1" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="483" y="202" width="397" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="step0-1-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;ins-product-aggregator&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Проверяет полноту, нормализует тарифы. В одной транзакции catalog-db пишет изменения, время опроса и outbox.&lt;/div&gt;">
+          <mxGeometry x="501" y="215" width="361" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="step0-2" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="918" y="202" width="397" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="step0-2-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Debezium → Kafka&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Changed / Withdrawn: полное состояние тарифа и версия, ключ insurerId:productId:tariffId. Refreshed - факт опроса, не готовность проекций.&lt;/div&gt;">
+          <mxGeometry x="936" y="215" width="361" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="step0-3" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="1353" y="202" width="397" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="step0-3-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Два независимых читателя&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;core-app и ins-comp-settlement обновляют свои проекции в разных consumer groups.&lt;/div&gt;">
+          <mxGeometry x="1371" y="215" width="361" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="step0-edge0" parent="1" edge="1" source="step0-0" target="step0-1" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="step0-edge1" parent="1" edge="1" source="step0-1" target="step0-2" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="step0-edge2" parent="1" edge="1" source="step0-2" target="step0-3" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="step1-0" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="48" y="417" width="397" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="step1-0-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;core-app&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Подтверждает оформление, изменение или отмену полиса. Сохраняет условия расчёта, действовавшие при оформлении.&lt;/div&gt;">
+          <mxGeometry x="66" y="430" width="361" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="step1-1" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="483" y="417" width="397" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="step1-1-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;core-db + outbox&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Сохраняет бизнес-запись и событие одной транзакцией.&lt;/div&gt;">
+          <mxGeometry x="501" y="430" width="361" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="step1-2" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="918" y="417" width="397" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="step1-2-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Debezium → Kafka&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;PolicyIssued / Adjusted / Cancelled: полный снимок полиса и условий расчёта, версия. Ключ policyId.&lt;/div&gt;">
+          <mxGeometry x="936" y="430" width="361" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="step1-3" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="1353" y="417" width="397" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="step1-3-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;ins-comp-settlement&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Ведёт локальный реестр полисов. Проверяет полноту потока и сверяет итоги до отправки месячного пакета.&lt;/div&gt;">
+          <mxGeometry x="1371" y="430" width="361" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="step1-edge0" parent="1" edge="1" source="step1-0" target="step1-1" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="step1-edge1" parent="1" edge="1" source="step1-1" target="step1-2" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="step1-edge2" parent="1" edge="1" source="step1-2" target="step1-3" style="noEdgeStyle=1;rounded=0;html=1;jumpStyle=arc;jumpSize=9;strokeColor=#5C4EA0;strokeWidth=2;endArrow=blockThin;endSize=10;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="delivery-band" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#EFF5FF;strokeColor=#EFF5FF;strokeWidth=1.4;">
+          <mxGeometry x="48" y="586" width="1702" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="delivery-band-title" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:16px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;ГАРАНТИИ И ВОССТАНОВЛЕНИЕ&lt;/div&gt;">
+          <mxGeometry x="61" y="586" width="1677" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="delivery" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="48" y="637" width="551" height="219" as="geometry" />
+        </mxCell>
+        <mxCell id="delivery-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;At-least-once и порядок по ключу&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Три зоны, RF=3, min.insync.replicas=2, acks=all. В сообщении eventId, schemaVersion, ключ и версия сущности.&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Потребитель пишет проекцию и inbox одной транзакцией. Offset подтверждает после commit. Повторы и устаревшие версии не меняют результат.&lt;/div&gt;">
+          <mxGeometry x="66" y="650" width="515" height="193" as="geometry" />
+        </mxCell>
+        <mxCell id="replay" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="624" y="637" width="551" height="219" as="geometry" />
+        </mxCell>
+        <mxCell id="replay-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Повторы, карантин и replay&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Временные ошибки повторяются с backoff. Некорректные события идут в карантин с алертом. Ошибка по полису блокирует закрытие его периода.&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Каталог пересобирается из compacted-топика. Для полисов старше окна хранения нужен снимок core-app и чтение с согласованной границы.&lt;/div&gt;">
+          <mxGeometry x="642" y="650" width="515" height="193" as="geometry" />
+        </mxCell>
+        <mxCell id="operations" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="1200" y="637" width="550" height="219" as="geometry" />
+        </mxCell>
+        <mxCell id="operations-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Свежесть и восстановление&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Следим за свежестью по страховщику, задержкой CDC, WAL, lag читателей и карантином.&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Kafka в трёх зонах основного региона. После восстановления копии БД дочитываем outbox от согласованной границы; дубли устраняет inbox. Сверяем версии и итоги.&lt;/div&gt;">
+          <mxGeometry x="1218" y="650" width="514" height="193" as="geometry" />
+        </mxCell>
+        <mxCell id="migration" parent="1" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#F6F9FD;strokeColor=#CFDDED;strokeWidth=1.4;">
+          <mxGeometry x="48" y="881" width="1702" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="migration-body" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=top;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;div style=&quot;font-family:Arial;font-size:18px;color:#205F99;line-height:1.24;margin-top:0px;font-weight:700;&quot;&gt;Переключение со старых опросов&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:16px;color:#425873;line-height:1.24;margin-top:7px;&quot;&gt;Создать исходные снимки с позицией CDC. Засеять compacted-топик каталогом до публикации новых версий. Наполнять проекции параллельно старым выборкам и сверить их. После сверки отключить два REST-опроса каталога и суточную выгрузку полисов. Внешние API страховщиков, клиентские вызовы и месячный обмен остаются в своих контурах.&lt;/div&gt;">
+          <mxGeometry x="66" y="894" width="1666" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="references" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#14283E;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;rounded=0;spacing=0;" value="&lt;span style=&quot;font-family:Arial;font-size:13px&quot;&gt;&lt;a href=&quot;https://kafka.apache.org/40/design/design/&quot; style=&quot;color:#205F99&quot;&gt;Apache Kafka · доставка и репликация&lt;/a&gt;　·　&lt;a href=&quot;https://debezium.io/documentation/reference/stable/transformations/outbox-event-router.html&quot; style=&quot;color:#205F99&quot;&gt;Debezium · Outbox Event Router&lt;/a&gt;&lt;/span&gt;">
+          <mxGeometry x="49" y="1024" width="1702" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
